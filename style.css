@@ -62,7 +62,6 @@ img {
     justify-content: center;
     background-color: hsl(178, 100%, 50%, 50%);
     opacity: 0;
-    /*transition: 0.3s all;*/
     border-radius: 10px;
 }
 
