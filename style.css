@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --verydarkbluebg: hsl(217, 54%, 11%);
+    --verydarkbluecard: hsl(216, 50%, 16%);
+    --verydarkblueline: hsl(215, 32%, 27%);
+}
+  
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--verydarkbluebg);
+    color: var(--softblue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.wrapper {
+    height: 540px;
+    width: 315px;
+    background-color: var(--verydarkbluecard);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img-header {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(178, 100%, 50%, 50%);
+    opacity: 0;
+    /*transition: 0.3s all;*/
+    border-radius: 10px;
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+}
+
+.title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.price-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--cyan);
+}
+
+.price > img {
+    height: 16px;
+    width: 9px;
+    margin-right: 5px;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.time > img {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+hr {
+    border: 0.5px solid var(--verydarkblueline);
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.author > img{
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+span {
+    color: white;
+    margin-left: 3px;
+}
+
+span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
